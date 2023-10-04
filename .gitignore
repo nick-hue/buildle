@@ -1,0 +1,6 @@
+# ignore all .txt files
+*.jpg
+*.png
+__pycache__
+search_menu.py
+test.py
