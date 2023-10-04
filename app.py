@@ -90,14 +90,6 @@ class App(ctk.CTk):
 
         self.after(250, self.on_tick)
 
-    def open_toplevel(self):
-        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
-            self.toplevel_window = ToplevelWindow(self)  # create window if its None or destroyed
-            self.toplevel_window.focus() 
-        else:
-            self.toplevel_window.focus()  # if window exists focus it
-
-
     def make_image(self, image_name, image_data):
     	with open(f'{image_name}', 'wb') as handler:
 	        data = requests.get(image_data['image']).content
