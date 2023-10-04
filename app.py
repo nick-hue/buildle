@@ -72,9 +72,9 @@ class App(ctk.CTk):
 		
 		# OTHER 
         self.selection = StringVar(self)
-        self.curr_filter = None        	# The current filter. Setting it to None initially forces the first update.
-        self.items = original_champion_names     # All of the items for the listbox.
-        self.on_tick()	    			# The initial update.
+        self.curr_filter = None        	            # The current filter. Setting it to None initially forces the first update.
+        self.items = original_champion_names        # All of the items for the listbox.
+        self.on_tick()	    			            # The initial update.
 
     def on_tick(self):
         if self.filter_box.get() != self.curr_filter:
