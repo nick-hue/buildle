@@ -127,7 +127,7 @@ class App(ctk.CTk):
 
 	    		self.mistakes_counter += 1
     	except IndexError:
-    		print("Error did not pick champ")
+    		print("Error did not pick champ, try again.")
 
 if __name__ == "__main__":
 	app = App()
