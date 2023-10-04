@@ -18,9 +18,6 @@ class App(ctk.CTk):
         self.title("LoL - Buildle")
         self.resizable(False, False)
         self.bind('<Return>', self.selected_item)
-
-        #self.grid_columnconfigure((0,1), weight=1)
-        #self.grid_rowconfigure(0, weight=1)
         if os.path.isfile('mistake_champ_img.png'):
         	delete_image('mistake_champ_img.png')
 
