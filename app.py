@@ -32,10 +32,10 @@ class App(ctk.CTk):
 
         # FRAMES
         self.search_frame = ctk.CTkFrame(self, corner_radius=0)
-        self.search_frame.grid(row=0, column=0, sticky='we')
+        self.search_frame.grid(row=0, column=0, sticky='nswe')
 
         self.champs_frame = ctk.CTkFrame(self, corner_radius=0)
-        self.champs_frame.grid(row=1, column=0, sticky='we')
+        self.champs_frame.grid(row=1, column=0, sticky='nswe')
 
         self.build_frame = ctk.CTkFrame(self, corner_radius=0)
         self.build_frame.grid(row=0, column=1, sticky='nswe')
@@ -46,12 +46,12 @@ class App(ctk.CTk):
         self.mistakes_frame.grid_columnconfigure(0,weight=1)
 
         # SEARCH FRAME WIDGETS
-        ctk.CTkLabel(self.search_frame, text='Search:').grid(row=0, column=0, padx=10)
+        ctk.CTkLabel(self.search_frame, text='Search:').grid(row=0, column=0, padx=20, pady=(50,5), sticky='nswe')
        
         self.filter_box = ctk.CTkEntry(self.search_frame)
-        self.filter_box.grid(row=0, column=1, sticky='we', padx=10, pady = 5)
+        self.filter_box.grid(row=0, column=1, sticky='nswe', padx=10, pady = (50,5))
         self.submit_button = ctk.CTkButton(self.search_frame, text = 'Submit', command=self.selected_item)
-        self.submit_button.grid(row=1, column=0, sticky='we', padx=10, pady = 5, columnspan=2)
+        self.submit_button.grid(row=1, column=0, sticky='nswe', padx=10, pady = 5, columnspan=2)
         self.submit_button.grid_columnconfigure(1, weight=1)
 
         # BUILD FRAME WIDGETS
