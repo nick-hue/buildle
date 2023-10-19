@@ -1,10 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from functools import lru_cache
-# na pernei swsta to patch
-# na pernei swsta ton ksante
-
 
 def convert_name(name, item):
     result = ''
@@ -47,8 +43,6 @@ def get_build(data_list):
         build.append(build_info)
     return build
 
-
-#@lru_cache(maxsize=None)
 def get_all_champ_data(champion_names):
 	all_data = []
 	for champion_name in champion_names:
