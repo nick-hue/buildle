@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from functools import lru_cache
+# na pernei swsta to patch
+# na pernei swsta ton ksante
 
 
 def convert_name(name, item):
@@ -146,7 +148,7 @@ def get_one_champ_data(champion_name):
 	    'build':get_build(build_data)
 	}
 
-	print(f"Build successfully retrieved for {champion_name}.")	    
+	#print(f"Build successfully retrieved for {champion_name}.")	    
 	return champ_info
 
 def get_one_champ_image(champion_name):
