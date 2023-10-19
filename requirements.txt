@@ -3,4 +3,4 @@ bs4=4.11.2
 tkinter=8.6
 customtkinter=5.2.0
 PIL=Pillow
-
+urllib=1.26.14
