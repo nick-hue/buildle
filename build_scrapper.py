@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 
 def convert_name(name, item):
     result = ''
@@ -93,10 +92,6 @@ def get_all_champ_data(champion_names):
 	    print(champion_name+' done.')
 
 	return all_data
-
-def store_all_data(all_data):
-	with open('data.json', 'w', encoding='utf-8') as f:
-	    json.dump(all_data, f, ensure_ascii=False, indent=4)
 
 def get_one_champ_data(champion_name):
 	headers = {
